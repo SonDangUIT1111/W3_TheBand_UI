@@ -124,6 +124,14 @@ html {
     font-size: 2px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     line-height: 46px;
@@ -131,14 +139,24 @@ html {
     cursor: pointer;
 }
 
-
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 12px;
 }
 
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+
+}
+
 #header .search-btn:hover {
     background-color: #f44336;
+    color: #fff;
 }
 
 
@@ -169,9 +187,12 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section-heading {
@@ -255,12 +276,11 @@ html {
 
 /* Places */
 .places-list {
-    margin-top: 32px;
-    margin-right: 48px;
+    margin-top: 16px;
     padding-bottom: 32px;
 }
 .place-item {
-    width: 33.3333%;
+    width: calc(100% / 3);
 }
 
 .place-img {
@@ -475,3 +495,100 @@ input.modal-input {
         transform: translateY(0);
     }
 }
+
+/* PC */
+@media (min-width: 1024px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+
+    .s-full-width {
+        width: 100% !important;
+    }
+
+    .s-col-full {
+        width: 100%;
+    }
+
+    #nav {
+        display: block;
+        width: 100%;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+        display: block;
+    }
+
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #nav li .subnav {
+        position: relative;
+        width: auto;
+    }
+
+    #nav li .subnav a {
+        color: #000;
+        padding: 5px 41px;
+        display: block;
+        background-color: #ccc;
+    }
+
+    #nav .subnav > li:hover a {
+        background-color: #fff;
+        color: #000;
+
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
+
+    #slider {
+        width: 100%;
+    }
+
+    #content .member-item-mobile {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 60%;
+    }
+
+    /* .contact-form {
+        margin-top: 8px;
+    } */
+
+    .mt-8 {
+        margin-top: 8px;
+    }
+}
+
+
+
+
+
