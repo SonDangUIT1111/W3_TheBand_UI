@@ -1,2 +1,2 @@
 # W3_TheBand_Practice_HTML_CSS
-Practice
+Practice HTML-CSS and little Javascript
